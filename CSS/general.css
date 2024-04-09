@@ -1,0 +1,64 @@
+/* COLORS:#646879 ,*/
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+/* Colors Used */
+:root {
+  --purple: #6c60e0;
+  --purple-light: #9179f5;
+  --black: #171b26;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5rem;
+  padding-top: 2rem;
+}
+/**************************/
+/* REUSABLE CLASSES */
+/**************************/
+.flexc {
+  display: flex;
+  flex-direction: column;
+}
+.flexr {
+  display: flex;
+}
+.alignc {
+  align-items: center;
+}
+.aligne {
+  align-items: end;
+}
+.justcb {
+  justify-content: space-between;
+}
+.gapsm {
+  gap: 2rem;
+}
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--3-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}

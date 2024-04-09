@@ -1,0 +1,264 @@
+/**************************/
+/* SECTION-HEADER */
+/**************************/
+.section-header {
+  margin-bottom: 4rem;
+}
+.logo {
+  gap: 12rem;
+}
+
+.logo span {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: var(--black);
+  display: block;
+}
+.logo span:first-of-type {
+  color: #6d61e0;
+  margin-left: 2rem;
+}
+.main-nav {
+  gap: 4.4rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--black);
+  position: relative;
+}
+.nav-link::after {
+  content: url("../SVG/circle-icon.svg");
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(50%);
+  opacity: 0;
+  transform: all 800ms ease-in;
+}
+.nav-link:hover::after {
+  color: #9179f5;
+  opacity: 100%;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #9179f5;
+}
+.register-btn {
+  color: #9179f5;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border: 1px solid #9179f5;
+  border-radius: 50px;
+  margin-left: auto;
+}
+.register-btn:hover {
+  box-shadow: 0 0 5px #9179f5;
+  transform: scale(1.005);
+}
+
+/**************************/
+/* SECTION-HERO */
+/**************************/
+.hero-text-box {
+  gap: 2rem;
+}
+.hero-text-box p:nth-child(1) {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #171b26;
+}
+
+.description p {
+  color: #646879;
+  font-size: 1.8rem;
+}
+.story-box img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50px;
+}
+.story-box p::after {
+  content: url("../SVG/play-icon.svg");
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 8%;
+  left: 23%;
+  transform: scale(1.2);
+}
+.story-box {
+  position: relative;
+  margin-top: 15px;
+}
+#story-box-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-left: -4.4rem;
+}
+#description {
+  height: 7.4rem;
+}
+.enroll-box {
+  margin-top: -5rem;
+}
+.purple-btn {
+  background-color: #6c60e0;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 50px;
+}
+.purple-btn:hover {
+  /* box-shadow: 0 0 5px #6c60e0; */
+  background-color: #9179f5;
+  transform: scale(1.005);
+}
+
+/* HERO-IMG */
+.hero-img-box {
+  position: relative;
+}
+.teacher-box,
+.hat-box,
+.book,
+.teaching {
+  position: absolute;
+}
+
+.teacher-box {
+  top: 7%;
+}
+.hat-box {
+  right: -6%;
+  top: 66%;
+  z-index: 70;
+}
+.book {
+  right: 7%;
+  top: 10%;
+}
+.teaching {
+  left: 12%;
+  top: 40%;
+}
+
+.tag {
+  padding: 1rem;
+  padding-right: 5rem;
+  box-shadow: 0 0 24px 6px #eee;
+}
+
+.tag,
+.tag-2 {
+  width: fit-content;
+  border-radius: 50px;
+  color: #646879;
+  transform: scale(0.8);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.tag-2 {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 24px #eee;
+  background-color: #fff;
+}
+.tag p:first-child,
+.tag-2 p:first-child {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.tag p,
+.tag-2 p {
+  font-size: 1.4rem;
+}
+/**************************/
+/* SECTION-FEATURED*/
+/**************************/
+.featured p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #171b26;
+  opacity: 70%;
+}
+
+/**************************/
+/* SECTION-FOOTER */
+/**************************/
+.section-footer {
+  margin-bottom: 2rem;
+}
+.about-us-box {
+  gap: 1rem;
+}
+.about-us {
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 24px 6px #eee;
+}
+
+.about-us p:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  opacity: 70%;
+}
+.about-us p:nth-child(2) {
+  font-size: 1rem;
+  opacity: 70%;
+  color: var(--black);
+}
+.hero-img-box {
+  background-image: url("../IMG/img-hero.png");
+  background-size: cover;
+  background-position: bottom;
+  z-index: 90;
+}
+/* CUST */
+.customers img {
+  width: 75%;
+}
+.cust {
+  align-self: center;
+  position: relative;
+}
+.cust::before {
+  content: url("../SVG/comment.svg");
+  position: absolute;
+  top: 16%;
+  left: 63%;
+  transform: scale(0.9);
+  mix-blend-mode: color-dodge;
+  box-shadow: 12px -12px 6px -10px #eee;
+}
+
+.cust2 {
+  align-self: end;
+}
+.why {
+  opacity: 70%;
+}
+.why p:first-child {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.2;
+}
+.why p {
+  font-size: 1.8rem;
+}
