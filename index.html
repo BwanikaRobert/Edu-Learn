@@ -11,12 +11,13 @@
     />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
     <link rel="icon" href="SVG/knowledge-icon.svg" />
     <title>Edu-Learn</title>
   </head>
   <body>
     <header class="container section-header">
-      <div class="logo flexr alignc">
+      <div class="flexr alignc logo">
         <a href="#" class="flexr aligne">
           <img
             alt="Knowledge-icon"
@@ -25,24 +26,43 @@
           />
           <span>Edu</span><span>Learn</span>
         </a>
-        <nav class="main-nav flexr justcb">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Courses</a>
-          <a href="#" class="nav-link">Mentors</a>
-          <a href="#" class="nav-link">Pricing</a>
-          <a href="#" class="nav-link">Blog</a>
+        <nav class="main-nav flexr juscb">
+          <div class="flexr alignc">
+            <a href="#" target="_blank" class="nav-link">Home</a
+            ><ion-icon name="home"></ion-icon>
+          </div>
+          <div class="flexr alignc">
+            <a href="#" class="nav-link">Courses</a
+            ><ion-icon name="book"></ion-icon>
+          </div>
+          <div>
+            <a href="#" class="nav-link">Mentors</a
+            ><ion-icon name="globe"></ion-icon>
+          </div>
+          <div>
+            <a href="#" class="nav-link">Pricing</a
+            ><ion-icon name="cash"></ion-icon>
+          </div>
+          <div>
+            <a href="#" class="nav-link">Blog</a
+            ><ion-icon name="paper-plane"></ion-icon>
+          </div>
         </nav>
-        <a href="#" class="register-btn">Register</a>
+        <div><a href="#" class="register-btn">Register</a></div>
       </div>
     </header>
     <main>
-      <section class="secton-hero container">
-        <div class="grid--2-cols">
+      <section class="section-hero container">
+        <div class="hero-container grid--2-cols">
           <div class="hero-text-box flexc">
-            <p>
+            <p class="hero-text-big">
               Let's Learn New<br />
               Course & Gain <br />
               More Skills
+            </p>
+            <p class="hero-text-small">
+              Let's Learn New Course<br />
+              & Gain More Skills
             </p>
             <div class="description flexr gapsm alignc">
               <img alt="bar-icon" src="SVG/Vector 1.svg" />
@@ -63,23 +83,25 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <div class="teacher-box tag flexr alignc gapsm">
-              <img alt="teacher-icon" src="SVG/teacher-round.svg" />
-              <div>
-                <p>100+</p>
-                <p>Expert Mentors</p>
+            <div class="hero-tags">
+              <div class="teacher-box tag flexr alignc gapsm">
+                <img alt="teacher-icon" src="SVG/teacher-round.svg" />
+                <div>
+                  <p>100+</p>
+                  <p>Expert Mentors</p>
+                </div>
               </div>
-            </div>
-            <div class="hat-box tag-2 flexr alignc gapsm">
-              <img alt="hat-icon" src="SVG/hat.svg" />
-              <div>
-                <p>1k+</p>
-                <p>Courses</p>
+              <div class="hat-box tag-2 flexr alignc gapsm">
+                <img alt="hat-icon" src="SVG/hat.svg" />
+                <div>
+                  <p>1k+</p>
+                  <p>Courses</p>
+                </div>
               </div>
-            </div>
-            <div class="book"><img alt="book-icon" src="SVG/book.svg" /></div>
-            <div class="teaching">
-              <img alt="teaching-icon" src="SVG/teachers.svg" />
+              <div class="book"><img alt="book-icon" src="SVG/book.svg" /></div>
+              <div class="teaching">
+                <img alt="teaching-icon" src="SVG/teachers.svg" />
+              </div>
             </div>
           </div>
         </div>
@@ -99,7 +121,7 @@
           <div><img alt="skillshare" src="SVG/skillshare.svg" /></div>
         </div>
       </section>
-      <section class="container section-footer">
+      <footer class="container section-footer">
         <div class="grid--3-cols gapsm">
           <div class="customers flexr">
             <div class="cust">
@@ -154,7 +176,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>

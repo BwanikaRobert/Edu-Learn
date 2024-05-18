@@ -1,0 +1,135 @@
+/********************/
+/* BELOW 1100PX */
+/********************/
+@media (max-width: 68em) {
+  .hero-text-box p:nth-child(1) {
+    font-size: 5rem;
+  }
+  .featured p {
+    font-size: 2rem;
+  }
+  .featured img {
+    width: 70%;
+  }
+  .why p:first-child {
+    font-size: 2.4rem;
+  }
+  .why p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 62em) {
+  .hero-text-box p:nth-child(1) {
+    font-size: 4rem;
+  }
+  .featured p {
+    font-size: 1.2rem;
+  }
+  .main-nav {
+    gap: 2.4rem;
+  }
+  .main-nav a {
+    display: none;
+  }
+  .main-nav ion-icon {
+    display: block;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us-box {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 52em) {
+  .section-header {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0 0.4rem;
+  }
+  .section-featured-in {
+    padding-top: 0;
+  }
+  .main-nav ion-icon {
+    display: none;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-big {
+    display: none;
+  }
+  .hero-text-small {
+    text-align: center;
+    display: block;
+    font-size: 3.5rem;
+  }
+  .why p:first-child {
+    font-size: 2.4rem;
+  }
+  .why p {
+    font-size: 1.4rem;
+  }
+  .purple-btn {
+    font-size: 1.2rem;
+  }
+  .hero-img-box {
+    height: 40rem;
+    grid-row: 1/-1;
+  }
+  .hero-text-box {
+    gap: 1rem;
+  }
+  .description p {
+    font-size: 1.4rem;
+  }
+  .featured p {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 0 2.4rem;
+  }
+  .section-hero {
+    padding-top: 0;
+  }
+
+  .register-btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.4rem;
+  }
+  .enroll-box {
+    justify-content: space-between;
+  }
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .featured div:first-child {
+    text-align: center;
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 32em) {
+  .hero-text-box p:nth-child(1) {
+    text-align: center;
+  }
+
+  .featured p {
+    font-size: 0.8rem;
+  }
+  .featured img {
+    width: 70%;
+  }
+  .enroll-box {
+    gap: 0rem;
+    flex-direction: column;
+    margin-top: 1.2rem;
+  }
+  .why p:first-child {
+    font-size: 1.5rem;
+  }
+  .why p {
+    font-size: 1rem;
+  }
+}
